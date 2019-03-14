@@ -1,0 +1,227 @@
+.homeslider{
+	margin-top: -10px;
+	position: relative;
+	width: 100%;
+	height: 606px;
+	background: url(/static/img/reg.jpg) no-repeat center center;
+
+}
+.homeslider .picture p{
+	cursor: pointer;
+	float: right;
+	width: 20%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	color: #DB3962;
+}
+.homeslider .picture .pp{
+	width: 100%;
+	height: 36px;
+}
+.homeslider .picture .pb,.homeslider .picture .pc{
+	width: 100%;
+	height: 25px;
+	margin-top: -15px;
+}
+.homeslider .picture .pd{
+	width: 100%;
+	height: 25px;
+	margin-top: -20px;
+}
+.homeslider .picture .pa{
+	margin-top: 29px;
+}
+.homeslider .picture{
+	position: absolute;
+	border-top: 1px solid transparent;
+	height: 515px;
+	width: 29.6%;
+	top: 62px;
+	right: 15%;
+}
+.homeslider .picture div{
+	/*display: none;*/
+	height: 16px;
+	color: #db3962;
+}
+.homeslider .picture .phone{
+	text-align: right;
+	padding-right: 25%;
+	/*padding-top: 10px;*/
+	margin-top: 108px;
+}
+.homeslider .picture .yanzhengma{
+	text-align: right;
+	margin-right: -3%;
+	margin-top: 37px;
+}
+.homeslider .picture .duanxinyanzheng{
+	text-align: right;
+	padding-right: 29%;
+	margin-top: 39px;
+}
+.homeslider .picture .pas{
+	text-align: right;
+	padding-right: 2%;
+	margin-top: 41px;
+}
+.homeslider .picture .repas{
+	text-align: right;
+	padding-right: 18%;
+	margin-top: 37px;
+}
+.homeslider .picture .inputxt{
+ 	width: 28%;
+    height: 34px;
+    margin-top: 0;
+    outline: none;
+    border: none;
+    margin-left: -28%;
+}
+.homeslider .picture .texttwo,.homeslider .picture .textthree,.homeslider .picture .span,
+.homeslider .picture .textfour,.homeslider .picture .textfive{
+    width: 22%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+	outline: none;
+	border: none;
+	margin-left: 30%;
+}
+.change1{
+	float: left;
+	display: inline-block;
+	margin-left: -19%;
+	width: 50%;
+	font-size: 12px;
+	height: 37px;
+	color: #db3962;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	margin-top: -4%;
+}
+.spanyan{
+	float: left;
+	display: inline-block;
+	margin-left: 0.3%;
+	width: 17%;
+	height: 37px;
+	/*background: red;*/
+}
+.homeslider .picture .texttwo{
+	float: left;
+	margin-left: 22%;
+	margin-top: -3%;
+	width: 15%
+}
+.homeslider .picture .textthree{
+	width: 18%;
+}
+.homeslider .picture .span{
+	cursor: pointer;
+	width: 22%;
+	margin-right: 11%;
+	margin-top: 1%;
+	display: inline-block;;
+}
+.homeslider .picture .textfour,.homeslider .picture .textfive{
+	width: 41%;
+    margin-top: 21px;
+}
+.homeslider .picture .textfour{
+	margin-left: -27%;
+	margin-top: 0;
+	width: 30%;
+}
+.homeslider .picture .textfive{
+	margin-left: -26%;
+	margin-top: 6px;
+	width: 30%;
+}
+.homeslider .picture .p1{
+	width: 100%;
+	height: 30px;
+	margin-top: -2%;
+}
+.homeslider .picture .textsix{
+	float: left;
+	margin-left: 17%;
+	margin-top: 4px;
+}
+.homeslider .p1 .span3{
+	display: inline-block;
+	margin-top: -11px;
+	float: left;
+	margin-left: 1%;
+	font-size: 12px;
+	color: black;
+
+}
+.homeslider .p1 .span2:hover{
+	color: red;
+}
+.homeslider .picture .p2{
+	width: 100%;
+    height: 32px;
+    margin-top: 1px
+}
+.homeslider .p2 img{
+	margin-left: 8%;
+}
+.homeslider .picture .p3{
+	width: 100%;
+    height: 64px;
+    margin-top: 46px;
+}
+.homeslider .p3 .img1{
+	float: left;
+	margin-left: 4%;
+	margin-top: 16px;
+}
+.homeslider .p3 .img2{
+	float: left;
+	margin-left: 11%;
+	margin-top: 0;
+}
+.homeslider .p3 .img3{
+	float: left;
+	margin-left: 9%;
+	margin-top: 0px;
+}
+.dd1{
+	margin-left: 40%;
+	float: left;
+}
+.textmsg{
+	margin-top: 13%;
+	position: absolute;
+	margin-left: 54%;
+}
+.vip1{
+	margin-left: -126%;
+	float: left;
+}
+.dd4{
+	margin-top: -4%;
+	float: left;
+	margin-left: 6%;
+}
+.dd5{
+	margin-top: -4%;
+	float: left;
+	margin-left: 8%;
+}
+.homeslider .picture .submit1{
+	background: url("/static/img/regbutn.png");
+	width: 277px;
+	height: 32px;
+	margin-left: -15%;
+	/*background: #db3962;*/
+	color: white;
+	font-size: 20px;
+}

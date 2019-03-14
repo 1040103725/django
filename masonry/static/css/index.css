@@ -1,0 +1,530 @@
+
+
+.homeslider{
+	position: relative;
+	width: 100%;
+	height: 420px;
+}
+
+#listt {
+	width: 100%;
+	height: 100%;
+}
+#listt li, #listt img {
+	width: 100%;
+	height: 100%;
+}
+#listt li {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#left, #right{
+	width: 50px;
+	height: 20px;
+	position: absolute;
+	background: yellow;
+	cursor: pointer;
+	top: 45%;
+}
+#left {
+	left: 10px;
+}
+#right {
+	right: 10px;
+}
+#list22{
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	right: 42%;
+	bottom: 12px;
+	}
+#list22 li{
+	width: 15px;
+	height: 15px;
+	border-radius: 50% 50%;
+	background: #656565;
+	text-align: center;
+	line-height: 18px;
+	cursor: pointer;
+	float: left;
+	margin-right: 8%;
+	}
+#list22 li.active{
+	background: orange;
+	}
+
+
+
+
+.homeline1{
+	margin-top: 18px;
+	width: 100%;
+	height: 210px;
+}
+.homeline1left,.homeline1right{
+	float: left;
+	width: 24%;
+	height: 210px;
+	border: 1px solid #dddddd;
+}
+.homeline1right,.homeline1main{
+	margin-left: 1%;
+}
+.homeline1main{
+	float: left;
+	width: 38%;
+	height: 210px;
+	border: 1px solid #dddddd;
+}
+.homeline1 p{
+	text-align:center;
+	font-size: 12px;
+}
+.homeline1 img{
+	margin-top: 5px;
+	margin-left: 2.1%;
+	width: 95.8%;
+}
+.homeline1main img{
+	margin-top: 5px;
+	margin-left: 1.5%;
+	width: 97%;
+}
+.homeline2{
+	/*margin: 0 auto;*/
+	margin-top: 18px;
+	width: 88.2%;
+	height: 159px;
+	background: #f9f9f9;
+	font-size: 12px;
+	border: 1px solid #dddddd;
+}
+.homeline2left{
+	float: left;
+	height: 140px;
+	width: 54%;
+	margin-left: 1%;
+	margin-top: 19px;
+}
+.homeline2right{
+	float: left;
+	height: 159px;
+	width: 45%;
+	margin-top: 10px;
+}
+.homeline2right p{
+	height: 33px;
+}
+.homeline2right .stoneAll{
+	float: left;
+	height: 30px;
+	margin-left: 3%;
+	margin-top: -8px;
+	width: 35%;
+	border: 1px solid #dddddd;
+	border-radius: 2px; 
+}
+.homeline2right .stone{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 22%;
+	text-align: center;
+	display: inline-block;
+	border-right: 1px solid #dddddd;
+	background: #e7e7e7;
+	font-weight: bold;
+}
+.homeline2right input[type=text]{
+	outline: none;
+	margin-top: 4px;
+	height: 20px;
+	width: 19%;
+	margin-left: 3%;
+	border: 1px solid #dddddd;
+}
+.homeline2right .p1{
+	margin-top: 18px;
+	height: 33px;
+	margin-left: -2%;
+}
+.homeline2right .p2{
+	margin-top: 10px;
+	height: 33px;
+	margin-left: -2%;
+}
+.homeline2right .colorAll{
+	float: left;
+	height: 30px;
+	margin-left: 3%;
+	margin-top: -8px;
+	width: 54%;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+}
+
+.homeline2right img,.homeline2right .img,.homeline2right .img1{
+	float: left;
+	margin-left: 1%;
+	width: 29px;
+	height: 19px;
+	margin-top: 6px;
+}
+.homeline2right .img{
+	margin-left: 3%;
+}
+.homeline2right .img1{
+	margin-left: 3%;
+}
+.homeline2right .stone1{
+	float: left;
+	width: 16%;
+}
+.homeline2right .p3{
+	float: right;
+	margin-right: 23%;
+	width: 20%;
+	height: 34px;
+}
+.homeline2right .p3 img{
+	margin-top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.homeline4{
+	height: 116px;
+	margin-top: 18px;
+	width: 88.2%;
+}
+.homeline4 img{
+	width: 100%;
+	height: 100%;
+}
+.homeline4 .one,.homeline4 .two{
+	float: left;
+	height: 116px;
+}
+.homeline4 .one{
+	margin-right: 0.1%;
+	width:50% ;
+}
+.homeline4 .two{
+	margin-left: 0.1%;
+	width:16.5% ;
+}
+.homeline5,.homeline6,.homeline9,.homeline10,.homeline3{
+	height: 427px;
+	margin-top: 18px;
+	width: 88.2%;
+	border: 1px solid #dddddd;
+}
+.homeline5 .homeline5left,.homeline5 .homeline5main,.homeline5 .homeline5right,.homeline5 .homeline5main .onea,.homeline5 .homeline5main .oneb,.homeline5 .homeline5main .twoa,
+.homeline5 .homeline5main .twob,.homeline5 .homeline5main .twoac,
+.homeline9 .homeline9left,.homeline9 .homeline9main,.homeline9 .homeline9right,.homeline9 .homeline9main .onea,.homeline9 .homeline9main .oneb,.homeline9 .homeline9main .twoa,
+.homeline9 .homeline9main .twob,.homeline9 .homeline9main .twoac,
+.homeline10 .homeline10left,.homeline10 .homeline10main,.homeline10 .homeline10right,.homeline10 .homeline10main .onea,.homeline10 .homeline10main .oneb,.homeline10 .homeline10main .twoa,
+.homeline10 .homeline10main .twob,.homeline10 .homeline10main .twoac,
+.homeline6 .homeline6left,.homeline6 .homeline6right,.homeline6 .homeline6main,.homeline6 .homeline6right .onea,.homeline6 .homeline6right .oneb,.homeline6 .homeline6right .twoa,
+.homeline6 .homeline6right .twob,.homeline6 .homeline6right .twoac,
+.homeline3 .homeline3left,.homeline3 .homeline3right,.homeline3 .homeline3main,.homeline3 .homeline3right .onea,.homeline3 .homeline3right .oneb,.homeline3 .homeline3right .twoa,
+.homeline3 .homeline3right .twob,.homeline3 .homeline3right .twoac{
+	float: left;
+}
+.homeline5 .homeline5left,
+.homeline9 .homeline9left,
+.homeline10 .homeline10left,
+.homeline6 .homeline6left,
+.homeline3 .homeline3left{
+	margin-left: 0.5%;
+	width: 29%;
+}
+.homeline5 .homeline5left .one,
+.homeline9 .homeline9left .one,
+.homeline10 .homeline10left .one,
+.homeline6 .homeline6left .one,
+.homeline3 .homeline3left .one{
+	margin-top: 5px;
+	width: 100%;
+	height: 170px;
+}
+.homeline5 .homeline5left .two,
+.homeline9 .homeline9left .two,
+.homeline10 .homeline10left .two,
+.homeline6 .homeline6left .two,
+.homeline3 .homeline3left .two{
+	margin-top: 10px;
+	width: 100%;
+	height: 237px;
+	background-color: #f9f9f9;
+}
+.homeline5left .two .list1,
+.homeline9left .two .list1,
+.homeline10left .two .list1,
+.homeline6left .two .list1,
+.homeline3left .two .list1{
+    margin-left: 7%;
+    padding-top: 7px;
+}
+.homeline5left .two .list2,.homeline9left .two .list2,.homeline10left .two .list2{
+	margin-top: 115px;
+    margin-left: 7%;
+}
+.homeline6left .two .list2,
+.homeline3left .two .list2{
+	margin-top: 30px;
+    margin-left: 7%;
+}
+.homeline9left .two .list2,.homeline10left .two .list2{
+	margin-top: 75px;
+}
+.homeline5left .two li,
+.homeline9left .two li,
+.homeline10left .two li,
+.homeline6left .two li,
+.homeline3left .two li{
+	margin-top: 8px;
+}
+.homeline5 .homeline5main,
+.homeline9 .homeline9main,
+.homeline10 .homeline10main,
+.homeline6 .homeline6right,
+.homeline3 .homeline3right{
+	margin-left: 0.5%;
+	width: 45%;
+}
+.homeline5 .homeline5main .one,
+.homeline9 .homeline9main .one,
+.homeline10 .homeline10main .one,
+.homeline6 .homeline6right .one,
+.homeline3 .homeline3right .one{
+	height: 200px;
+	width: 100%;
+	margin-top: 5px;
+}
+.homeline5 .homeline5main .one .onea,.homeline5 .homeline5main .one .oneb,
+.homeline9 .homeline9main .one .onea,.homeline9 .homeline9main .one .oneb,
+.homeline10 .homeline10main .one .onea,.homeline10 .homeline10main .one .oneb,
+.homeline6 .homeline6right .one .onea,.homeline6 .homeline6right .one .oneb,
+.homeline3 .homeline3right .one .onea,.homeline3 .homeline3right .one .oneb{
+	height: 200px;
+	width: 49.5%;
+}
+.homeline5 .homeline5main .one .oneb,
+.homeline9 .homeline9main .one .oneb,
+.homeline10 .homeline10main .one .oneb,
+.homeline6 .homeline6right .one .oneb,
+.homeline3 .homeline3right .one .oneb{
+	margin-left: 1%;
+}
+.homeline5 .homeline5main .two,
+.homeline9 .homeline9main .two,
+.homeline10 .homeline10main .two,
+.homeline6 .homeline6right .two,
+.homeline3 .homeline3right .two{
+	margin-top: 5px;
+	height: 212px;
+	width: 100%;
+}
+.homeline5 .homeline5main .two .twoa,.homeline5 .homeline5main .two .twob,.homeline5 .homeline5main .two .twoc,
+.homeline9 .homeline9main .two .twoa,.homeline9 .homeline9main .two .twob,.homeline9 .homeline9main .two .twoc,
+.homeline10 .homeline10main .two .twoa,.homeline10 .homeline10main .two .twob,.homeline10 .homeline10main .two .twoc,
+.homeline6 .homeline6right .two .twoa,.homeline6 .homeline6right .two .twob,.homeline6 .homeline6right .two .twoc,
+.homeline3 .homeline3right .two .twoa,.homeline3 .homeline3right .two .twob,.homeline3 .homeline3right .two .twoc{
+	height: 212px;
+	width: 32.6%;
+	float: left;
+}
+.homeline5 .homeline5main .two .twob,.homeline5 .homeline5main .two .twoc,
+.homeline9 .homeline9main .two .twob,.homeline9 .homeline9main .two .twoc,
+.homeline10 .homeline10main .two .twob,.homeline10 .homeline10main .two .twoc,
+.homeline6 .homeline6right .two .twob,.homeline6 .homeline6right .two .twoc,
+.homeline3 .homeline3right .two .twob,.homeline3 .homeline3right .two .twoc{
+	margin-left: 1%;
+}
+.homeline5 .homeline5right,
+.homeline9 .homeline9right,
+.homeline10 .homeline10right,
+.homeline6 .homeline6main,
+.homeline3 .homeline3main{
+	margin-top: 5px;
+	margin-left: 0.5%;
+	width: 24%;
+	height: 417px;
+}
+.homeline5 img,
+.homeline6 img,.homeline8 img,.homeline9 img,.homeline10 img,
+.homeline3 img{
+	width: 100%;
+	height: 100%;
+}
+.homeline8,.news{
+	margin-top: 18px;
+	width: 88.2%;
+	height: 116px;
+}
+.news{
+	height: 288px;
+	overflow: hidden;
+}
+.news .newsone,.news .newstwo,.news .newsthree,.news .newsfour{
+	float: left;
+	height: 286px;
+	width: 26.7%;
+	position: relative;
+	border: 1px solid #dddddd;
+}
+.news .newstwo,.news .newsthree,.news .newsfour{
+	margin-left: 1%;
+}
+.news .newsone div,.news .newstwo div,.news .newsthree div{
+	padding-left: 2%;
+	 margin-top: 5px;
+	width: 98%;
+	height: 20px;
+	line-height: 20px;
+}
+.aed{
+	float: left;
+	display: inline-block;
+	height: 20px;
+	margin-left: 2%;
+	line-height: 20px;
+}
+.img1ed{
+	margin-top: 7px;
+	float: left;
+	display: inline-block;
+	height: 7px;
+	width: 2%;
+}
+.news .img1{
+	margin-left: 2%;
+	width: 96%;
+	margin-top: 5px;
+}
+.news .newsfour{
+	width: 16.1%;
+	border: none;
+}
+.news .img2{
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+}
+.news p{
+	padding-left: 6%;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	background: url(../img/headbg.jpg);
+	
+}
+#bga{ 
+    display: none;  
+    position: absolute;  
+	top: 0%;  left: 0%;  
+	width: 100%; 
+    height: 100%; 
+	background-color: black; 
+	z-index:298;  
+	-moz-opacity: 0.6; 
+	opacity:.60;  
+	filter: alpha(opacity=60);
+}
+.changea{
+	position: fixed;
+	width: 30%;
+	left: 35%;
+	top: 210px;
+	z-index: 299;
+	display: none;
+	cursor: pointer;
+}
+.changea .pdeng{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 3%;
+	font-size: 14px;
+	font-weight: bold;
+	background: #ffd8d9;
+	border-bottom: 3px solid #b61524;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.changea .pdeng span{
+	float: right;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 5%;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #b61524;
+}
+.changeoneea{
+	padding-top: 50px;
+	width: 100%;
+	height: 130px;
+	background: #f7f7f7;
+}
+.changea .num{
+	padding-left: 23%;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px;
+	width: 100%;
+}
+.changea input[type=button]{
+	border-radius: 5px;
+	position: absolute;
+    top: 140px;
+    left: 40%;
+	width: 20%;
+	height: 30px;
+	color: white;
+	background:#b61524 ;
+}
+
+
+/*轮播图*/
+html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 1440px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }

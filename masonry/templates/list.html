@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/list.css" />
+		
+		
+		<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../js/list.js" ></script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbarleft">
+				<p>
+					<span id="hello">
+						您好,欢迎光临戴欧妮珠宝网！
+					    <a href="onload/onload.html">登陆</a> /
+					    <a href="login/login.html">注册</a>
+					</span>
+					<span>体验中心：<a href="#">深圳分店</a></span>
+					<span class="chang">切换</span>
+				</p>
+			</div>
+			<div class="topbarright">
+				<a href="#">
+					<span>
+						<img src="../img/banicon.png" class="img"/>
+					            我的戴欧妮
+					</span>
+				</a>
+				<a href="Mycar/MyCar.html">
+					<span>
+						我的珠宝箱[<span class="zero zero1">0</span>]
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						&lt;
+					             正品认证
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						&lt;
+					    <span class="zero">进店预约</span>
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						<img src="../img/banicon2.png"/>
+					            手机版
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						<img src="../img/banicon3.png"/>
+					             微信
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						<img src="../img/banicon4.png"/>
+					             微博
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="change">
+			<div id="bg"></div>
+			<p>切换体验中心<span>&times;</span></p>
+			<div class="changeonee">
+				<!--<div class="changeone">
+					<p>华北：</p>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+			    </div>
+				<div class="changeone">
+					<p>华北：</p>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+					<span>北京·戴欧妮旗舰店</span>
+				</div>-->
+			</div>
+		</div>
+		<div class="header">
+			<div class="headerleft">
+				<img src="../img/dionly.png"/>
+			</div>
+			<div class="headermain">
+				<p class="p1">
+					<input type="text" placeholder="请输入型号或名称"/>
+					<input type="button" value="搜索"/>
+				</p>
+				<p class="p2">
+					<span>
+						永恒
+					</span>
+					<span>
+						浪漫
+					</span>
+					<span>
+						一生
+					</span>
+					<span>
+						爱情
+					</span>
+					<span>
+						密语
+					</span>
+				</p>
+			</div>
+			<div class="headerright">
+				<img src="../img/二维码.png"/>
+			</div>
+		</div>
+		<div class="menuer">
+			<div class="menuerleft">
+				<span class="one">
+					所有分类
+				</span>
+				<span class="unhover">
+					
+				</span>
+			</div>
+			<div class="menuermain">
+				<a href="index/index.html">
+					<span>
+						首页
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						裸钻
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						钻戒定制
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						定价产品
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						黄金
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						高端定制
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						优惠活动
+					</span>
+				</a>
+				<a href="#">
+					<span>
+						珠宝百科
+					</span>
+				</a>
+			</div>
+			<div class="menuerright">
+				<img src="../img/tephone.png"/>
+			</div>
+		</div>
+		<div class="homeslider">
+			<div class="classfy">
+				<!--<div class="classfyone">
+					<p>
+						<a href="#">钻石</a>
+					</p>
+					<div>
+						<span><a href="#">30克</a></span>
+						<span><a href="#">50克</a></span>
+						<span><a href="#">80克</a></span>
+						<span><a href="#">1克拉</a></span>
+						<span><a href="#">异形钻</a></span>
+					</div>
+				</div>-->
+			</div>
+			<div class="picture">
+				<a href="#">
+					<img src="../img/banner.jpg" />
+				</a>
+			</div>
+		</div>
+		<p class="pindex"><a href="#"><span>首页</span></a> > <a href="#"><span>钻石</span></a></p>
+		<div class="content">
+			<div class="selecttab">
+				<div class="GIA GIAed">
+				    GIA钻石搜索
+			    </div>
+			    <!--<div class="guojian">
+				             国检钻石搜索
+			    </div>-->
+			</div>
+			<div class="diamondfind">
+				<div class="findwrap">
+		            <div class="wraphead">重量（CARAT）：</div>
+		            <div class="wrapitem">
+		            	<input name="mincaratvalue" type="text" id="mincaratvalue" value="0.30" /> - <input name="maxcaratvalue" type="text" id="maxcaratvalue" value="0.39" /> 克拉
+		            </div>
+		            <div class="wraphead" style="margin-left:50px;">证书号（CertNo）：</div>
+		            <div class="wrapitem">
+		            	<input type="text" id="certno" name="certno" style="width: 50%;"/>
+		            </div>
+		        </div>
+				<div class="findwrap" style="height: 60px;">
+                    <div class="wraphead">
+                    	形状（SHAPE）：
+                    </div>
+		            <div class="wrapitem" style="height: 60px;line-height: 60px;width: 60%;float: left;">
+		                <div class="diaimgs" style="padding-left:0;">
+		                	<span id="shape_1" class="spanimg">
+		                		<img src="../img/圆形.png" title="圆形" />
+		                	</span>
+		                	<span  class="spantxt" id="txt_shape_1">
+		                		圆形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_2"  class="spanimg">
+		                		<img src="../img/公主方.png" title="公主方" />
+		                	</span>
+		                	<span id="txt_shape_2"   class="spantxt">
+		                		公主方
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_3"  class="spanimg">
+		                		<img src="../img/祖母绿.png" title="祖母绿" />
+		                	</span>
+		                	<span id="txt_shape_3"  class="spantxt">
+		                		祖母绿
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_4" class="spanimg">
+		                		<img  src="../img/椭圆形.png" title="椭圆形" />
+		                	</span>
+		                	<span id="txt_shape_4"  class="spantxt">
+		                		椭圆形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_5"  class="spanimg">
+		                		<img src="../img/橄榄形.png" title="橄榄形" />
+		                	</span>
+		                	<span id="txt_shape_5"  class="spantxt">
+		                		橄榄形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_6"  class="spanimg">
+		                		<img src="../img/三角形.png" title="三角形" />
+		                	</span>
+		                	<span id="txt_shape_6"  class="spantxt">
+		                		三角形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_7"  class="spanimg">
+		                		<img src="../img/垫形.png" title="垫形" />
+		                	</span>
+		                	<span id="txt_shape_7"  class="spantxt">
+		                		垫形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_8"  class="spanimg">
+		                		<img src="../img/心形.png" title="心形" />
+		                	</span>
+		                	<span id="txt_shape_8"  class="spantxt">
+		                		心形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" >
+		                	<span id="shape_9"  class="spanimg">
+		                		<img src="../img/梨形.png" title="梨形" />
+		                	</span><span id="txt_shape_9"  class="spantxt">
+		                		梨形
+		                	</span>
+		                </div>
+		                <div class="diaimgs" style="border-right:none;" >
+		                	<span id="shape_10"  class="spanimg">
+		                		<img  src="../img/雷蒂恩.png" title="雷蒂恩" />
+		                	</span>
+		                	<span id="txt_shape_10"  class="spantxt">
+		                		雷蒂恩
+		                	</span>
+		                </div>
+		                        <input name="shape" type="hidden" id="shape" />
+		            </div>
+                </div>
+		        <div class="findwrap">
+		            <div class="wraphead">
+		            	颜色（COLOR）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+		                <div class="w070" id="color_1">
+		                	D 完全无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_2">
+		                	E 无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_3">
+		                	F 几乎无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_4">
+		                    G 几乎无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_5">
+		                	H 几乎无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_6">
+		                	I 接近无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_7">
+		                	J 接近无色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_8">
+		                	K 淡黄色
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="color_9">
+		                	L 淡黄色
+		                </div>
+		            </div>
+		            <input name="color" type="hidden" id="color" />
+		                       
+		        </div>
+		        <div class="findwrap">
+		            <div class="wraphead">
+		            	净度（CLARITY）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+		                <div class="w070" id="clarity_1">
+		                	FL 完美无暇
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_2" >
+		                	IF 内部洁净
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_3" >
+		                	VVS1 极微瑕
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_4" >
+		                	VVS2 极微瑕
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_5" >
+		                	VS1 微瑕
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_6">
+		                	VS2 微瑕
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_7">
+		                	SI1 小瑕
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="clarity_8">
+		                	SI2 小瑕
+		                </div>
+		                <input name="clarity" type="hidden" id="clarity" />
+		           </div>
+		        </div>
+		        <div class="findwrap" id="showselectcut" style="display:none;">
+		            <div class="wraphead">
+		            	切工（CUT）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+			            <div class="w070" id="cut_2" >
+			                                                     完美 EX
+			            </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="cut_3">
+		                	很好 VG
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="cut_4">
+		                	好 GD
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="cut_5">
+		                	一般 Fair
+		                </div>
+		                <input name="cut" type="hidden" id="cut" />
+		            </div>
+		        </div>
+		        <div class="findwrap">
+		            <div class="wraphead">
+		            	抛光（POLISH）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+		                <div class="w070" id="polish_2">
+		                	完美 EX
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="polish_3">
+		                	很好 VG
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="polish_4">
+		                	好 GD
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="polish_5">
+		                	一般 Fair
+		                </div>
+		                <input name="polish" type="hidden" id="polish" />
+		           </div>
+		        </div>
+		        <div class="findwrap">
+		            <div class="wraphead">
+		            	对称（SYMMETRY）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+		                <div class="w070" id="symmetry_2">
+		                	完美 EX
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="symmetry_3">
+		                	很好 VG
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="symmetry_4">
+		                	好 GD
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="symmetry_5">
+		                	一般 Fair
+		                </div>
+		                <input name="symmetry" type="hidden" id="symmetry" />
+		            </div>
+		        </div>
+		        <div class="findwrap" style="border-bottom:none;">
+		            <div class="wraphead">
+		                                                     价格（PRICE）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+		                <div class="w070" id="selectprice_1">
+		                	5千以下
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectprice_2">
+		                	5千-1万
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectprice_3">
+		                	1万-2万
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectprice_4">
+		                	2万-5万
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectprice_5">
+		                	5万-10万
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectprice_6">
+		                	10万以上
+		                </div>
+		                <input name="SelectPrice" type="hidden" id="SelectPrice" />
+		           </div>
+		        </div>
+		        <div class="findwrap">
+		            <div class="wraphead">
+		            	荧光（FLOURESCENCE）：
+		            </div>
+		            <div class="wrapitem" style="width: 88%;">
+		                <div class="w070" id="selectflour_1">
+		                	N-无荧光
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectflour_2">
+		                	F-弱荧光
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectflour_3">
+		                	M-中荧光
+		                </div>
+		                <div class="span">|</div>
+		                <div class="w070" id="selectflour_4">
+		                	S-强荧光
+		                </div>
+		                <input name="SelectFlour" type="hidden" id="SelectFlour" />
+		            </div>
+		        </div>
+		        <div class="findbutn">
+		            <div class="button" id="search">裸钻搜索</div>
+		            <div class="button" id="reset">重置</div>
+		            <div style="float:left;margin-left:150px;height:40px;line-height:40px;cursor:pointer;"><a href="http://www.dionly.com/baike/8569/" target="_blank">不懂钻石参数？点这里</a></div>
+        		</div>
+            </div>
+		    <div class="list">
+		    	<div class="listInfo">
+		    		<p class="p1">
+		    			形状
+		    			<span>|</span>
+		    			钻重
+		    			<span>|</span>
+		    			净度
+		    			<span>|</span>
+		    			颜色
+		    			<span>|</span>
+		    			切工
+		    			<span>|</span>
+		    			抛光
+		    			<span>|</span>
+		    			对称
+		    			<span>|</span>
+		    			荧光
+		    			<span>|</span>
+		    			证书
+		    			<span>|</span>
+		    			证书号
+		    			<span>|</span>
+		    			市场价
+		    			<span>|</span>
+		    			商城价<i></i>
+		    			<span>|</span>
+		    			时效
+		    			<span>|</span>
+		    			订购
+		    		</p>
+		    		<ul>
+		    			<!--<li>
+		    				<img src="../img/tuoyuanxing.png">
+			    			<span>|</span>
+			    			0.30
+			    			<span>|</span>
+			    			SI1
+			    			<span>|</span>
+			    			L
+			    			<span>|</span>
+			    			-
+			    			<span>|</span>
+			    			VG
+			    			<span>|</span>
+			    			GD
+			    			<span>|</span>
+			    			N
+			    			<span>|</span>
+			    			GIA
+			    			<span style="margin-right: 0.5%;">|</span>
+			    			1228489089
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    			<span class="price">￥3872.00</span>
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    		    ￥1678.00
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    			全球定钻
+			    			<span style="margin-left: 0.5%;margin-right: 0;">|</span>
+			    			<span class="book">订购</span>
+		    			</li>
+		    			<li>
+		    				<img src="../img/tuoyuanxing.png">
+			    			<span>|</span>
+			    			0.30
+			    			<span>|</span>
+			    			SI1
+			    			<span>|</span>
+			    			L
+			    			<span>|</span>
+			    			-
+			    			<span>|</span>
+			    			VG
+			    			<span>|</span>
+			    			GD
+			    			<span>|</span>
+			    			N
+			    			<span>|</span>
+			    			GIA
+			    			<span style="margin-right: 0.5%;">|</span>
+			    			1228489089
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    			<span class="price">￥3872.00</span>
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    		    ￥1678.00
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    			全球定钻
+			    			<span style="margin-left: 0.5%;margin-right: 0;">|</span>
+			    			<span class="book">订购</span>
+		    			</li>
+		    			<li>
+		    				<img src="../img/tuoyuanxing.png">
+			    			<span>|</span>
+			    			0.30
+			    			<span>|</span>
+			    			SI1
+			    			<span>|</span>
+			    			L
+			    			<span>|</span>
+			    			-
+			    			<span>|</span>
+			    			VG
+			    			<span>|</span>
+			    			GD
+			    			<span>|</span>
+			    			N
+			    			<span>|</span>
+			    			GIA
+			    			<span style="margin-right: 0.5%;">|</span>
+			    			1228489089
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    			<span class="price">￥3872.00</span>
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    		    ￥1678.00
+			    			<span style="margin-left: 0.5%;margin-right: 0.5%;">|</span>
+			    			全球定钻
+			    			<span style="margin-left: 0.5%;margin-right: 0;">|</span>
+			    			<span class="book">订购</span>
+		    			</li>-->
+		    		</ul>
+		    		<div class="p2">
+		    			<p class="pageone" >
+		    				共84款 | 21款/页  | 第1页/4页
+		    			<p>
+		    			<div class="pagetwo">
+		    				<button>1</button>
+		    				<button>2</button>
+		    				<button>3</button> 
+		    				<button>4</button>
+		    				<button style="width: 10%;">下页</button>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="goodList">
+		    		<div class="contenttwo">
+	        			<div class="contentonetop">
+	        				精选戒托
+	        			</div>
+	        			<div class="img" style="margin-left: 5%;height: 178px;width: 90%;border: 1px solid lightgrey;margin-top: 10px;">
+	        				<img src="../img/FR-8039-0.jpg" style="width: 100%;height: 100%;"/>
+	        			</div>
+	        			<p class="p1" style="text-align: center;">永恒之心</p>
+	        			
+	        			<div class="img" style="margin-left: 5%;height: 178px;width: 90%;border: 1px solid lightgrey;margin-top: 10px;">
+	        				<img src="../img/花眸.jpg" style="width: 100%;height: 100%;"/>
+	        			</div>
+	        			<p class="p1" style="text-align: center;"><a href="#">花眸</a></p>
+	        			
+	        			
+	        		</div>
+		    	</div>
+		    </div>
+				
+				
+			
+		</div>	
+			
+		
+		
+		
+		
+		
+		<div class="center">
+	    	<div class="one">
+	    		<h2>体验中心</h2>
+	    	    <ul id="list">
+	    		  <!--<li class="selected">北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>
+	    		  <li>北京</li>-->
+	    	    </ul>
+	    	</div>
+	    	<div class="two">
+	    		<div class="left" id="list2">
+	    			<!--<p class="p1ed">胡安娜.胡安娜胡安娜胡安娜胡安娜胡安娜</p>
+	    			<p class="p2ed">胡安娜胡安娜胡安娜胡安娜胡安娜胡安娜</p>
+	    			<p class="p2ed">胡安娜胡安娜胡安娜胡安娜胡安娜胡安娜</p>
+	    			<p class="p2ed">胡安娜胡安娜胡安娜胡安娜胡安娜胡安娜</p>-->
+	    		</div>
+	    		<div class="right" id="mappicture">
+	    			<!--<img src="../img/chengdu.jpg"/>-->
+	    		</div>
+	    	</div>
+	    </div>
+		<div class="security">
+	    	
+	    </div>
+		<div class="footer">
+			<div class="footerone">
+				<div class="kuang kuanga">
+					<i class="ione"></i>
+					<ul>
+						<li class="lii"> 购买支付</li>
+						<li><a href="#">新手教程</a></li>
+						<li><a href="#">订购流程</a></li>
+						<li><a href="#">支付常见问题</a></li>
+					</ul>
+				</div>
+				<div class="kuang">
+					<i class="itwo"></i>
+					<ul>
+						<li class="lii"> 收获指南</li>
+						<li><a href="#">订单处理时间</a></li>
+						<li><a href="#">配送方法和收费</a></li>
+						<li><a href="#">防伪包装</a></li>
+					</ul>
+				</div>
+				<div class="kuang">
+					<i class="ithree"></i>
+					<ul>
+						<li class="lii">售后服务</li>
+						<li><a href="#">质量承诺</a></li>
+						<li><a href="#">购物协议</a></li>
+						<li><a href="#">售后服务</a></li>
+					</ul>
+				</div>
+				<div class="kuang">
+					<i class="ifour"></i>
+					<ul>
+						<li class="lii"> 会员中心</li>
+						<li><a href="#">如何成为会员</a></li>
+						<li><a href="#">积分规则</a></li>
+						<li><a href="#">优惠政策</a></li>
+					</ul>
+				</div>
+				<div class="kuang">
+					<i class="ifive"></i>
+					<ul>
+						<li class="lii"> 关于戴欧妮</li>
+						<li><a href="#">戴欧妮介绍</a></li>
+						<li><a href="#">戴欧妮资质</a></li>
+						<li><a href="#">戴欧妮优势</a></li>
+					</ul>
+				</div>
+				<div class="kuang">
+					<i class="isix"></i>
+					<ul>
+						<li class="lii"> 更多服务</li>
+						<li><a href="#">鉴定机构</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footertwo">
+				<p>
+					<span class="span1">
+                                                                体验中心地址：广东省深圳市南山区创业路中兴工业城9栋601 联系电话：4006578478
+					</span>
+					<span class="span2">
+						全球24小时服务热线
+					</span>
+				</p>
+				<p class="p1">
+					<span class="span1">
+						Copyright @ 2007-2014 深圳市戴欧妮网络科技有限公司 ALL Rights Reserved 经营许可证编号：粤B2-20080371 粤ICP备11058956号-1
+					</span>
+					<span class="span3">
+						4006-578-478
+					</span>
+				</p>
+			</div>
+			<div class="footerthree">
+				<div class="onee">
+					<div class="img">
+						<img src="../img/icon1_03.jpg" />
+					</div>
+					<div class="info">
+						<p class="p1">网上交易</p>
+						<p>保障中心</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="img">
+						<img src="../img/icon2_05.jpg" />
+					</div>
+					<div class="info">
+						<p class="p1">众信认证</p>
+						<p>安全电商</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="img">
+						<img src="../img/icon3_03.jpg" />
+					</div>
+					<div class="info">
+						<p class="p1">工商网监</p>
+						<p>电子信息</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="img">
+						<img src="../img/icon4_11.jpg" />
+					</div>
+					<div class="info">
+						<p class="p1">经营性网站</p>
+						<p>备案信息</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="img">
+						<img src="../img/icon5_14.jpg" /> 
+					</div>
+					<div class="info">
+						<p class="p1">诚信电商</p>
+						<p>信用认证</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="img">
+						<img src="../img/icon6_16.jpg" />
+					</div>
+					<div class="info">
+						<p class="p1">百度推广</p>
+						<p>安全认证</p>
+					</div>
+				</div>
+				<div class="one">
+					<div class="img">
+						<img src="../img/icon7_05.jpg" /> 
+					</div>
+					<div class="info">
+						<p class="p1">戴欧妮珠宝</p>
+						<p>荣誉证书</p>
+					</div>
+				</div>
+			</div>
+			<div class="footerfour">
+				<p class="p1">
+						 友情链接：
+                    	 <a href="#">钻石&nbsp;&nbsp;&nbsp;</a> <a href="#">正佳养生网 &nbsp;&nbsp;&nbsp; </a><a href="#">中关村商城&nbsp;&nbsp;&nbsp;</a><a href="#">裸钻&nbsp;&nbsp;&nbsp;</a><a href="#">钻石珠宝论坛&nbsp;&nbsp;&nbsp;
+	                     </a><a href="#">麻豆网&nbsp;&nbsp;&nbsp;</a>
+	                     <a href="#">时尚生活网&nbsp;&nbsp;&nbsp; </a><a href="#"> 母亲节礼物&nbsp;&nbsp;&nbsp;</a><a href="#">中国美业网&nbsp;&nbsp;&nbsp;</a>
+	                     <a href="#">婚戒 &nbsp;&nbsp;&nbsp;</a><a href="#">结婚 &nbsp;&nbsp;&nbsp; </a><a href="#">新疆和田玉&nbsp;&nbsp;&nbsp;</a><a href="#">手礼网&nbsp;&nbsp;&nbsp;</a>
+	                     <a href="#">和田玉 &nbsp;&nbsp;&nbsp; </a><a href="#">国美在线优惠券 &nbsp;&nbsp;&nbsp;</a><a href="#">钻戒网&nbsp;&nbsp;&nbsp;</a><a href="#">服装搭配&nbsp;&nbsp;&nbsp;</a>
+                          
+				</p>
+				<p class="p2">友情链接请加QQ:2992936048</p>
+			</div>
+		</div>
+		<!--<div class="Zxs">
+			<div class="Zxsone">
+				<img src="../img/售前服务.png" />
+				<p>售前服务</p>
+			</div>
+			<div class="Zxsone">
+				<img src="../img/售前服务.png" />
+				<p>售前服务</p>
+			</div>
+			<div class="Zxsone">
+				<img src="../img/售后咨询.png" />
+				<p>售后咨询</p>
+			</div>
+			<div class="Zxsone">
+				<img src="../img/加盟咨询.png" />
+				<p>加盟咨询</p>
+			</div>
+			<div class="Zxsone">
+				<img src="../img/二维码1.png" />
+				<p>二维码</p>
+			</div>
+			<div class="Zxsone">
+				<img src="../img/返回顶部.png" />
+				<p>返回顶部</p>
+			</div>
+		</div>-->
+	</body>
+</html>
+
