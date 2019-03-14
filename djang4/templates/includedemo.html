@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>include标签确认</title>
+</head>
+<body>
+    {% include 'headview.html' %}
+    {% for goods in goods_list %}
+        {% include 'create_goods.html' with goods=goods %}
+    {% endfor %}
+
+</body>
+</html>

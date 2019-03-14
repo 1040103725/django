@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    你的名字：{{ name }}
+</p>
+<p>
+    你的年龄：{{ age }}
+</p>
+<p>
+    你的身高：{{ height }}
+</p>
+<p>
+    语文：{{ score }}
+</p>
+
+{% if usernaem %}
+    <p>用户名:{{ usernaem }}</p>
+{% else %}
+    <p>用户名：未登录</p>
+{% endif %}
+
+{% if usernaem == 'root' %}
+    <p style="color:red">超级管理员</p>
+{% elif usernaem %}
+    <p>用户名：{{ usernaem }}</p>
+{% else %}
+    <p>用户名：未登录(游客）</p>
+{% endif %}
+
+{% for item in score %}
+    <p>成绩：{{ item }}</p>
+{% endfor %}
+
+<ul>
+    {% for dir in scoredir %}
+        <li>
+            {{ forloop.counter0 }}-{{ dir }}
+        </li>
+    {% endfor %}
+</ul>
+
+<ul>
+    {% for name in names %}
+            {% if forloop.counter|divisibleby:2%}
+                <li style="color:red;">{{ name }}</li>
+            {% else %}
+                <li style="color:blue">{{ name }}</li>
+            {% endif %}
+        {% empty %}
+            <li>没有names属性</li>
+        {% endfor %}
+</ul>
+
+<p>
+    {{ name|lower }}
+</p>
+
+<p>
+    {{ name|upper }}
+</p>
+
+<p>
+    {{ name|join:'-' }}
+</p>
+
+<p>
+    {{ haha|default:'默认值测试' }}
+</p>
+
+
+{% include 'create_goods.html' %}
+{% include 'create_goods.html' %}
+{% include 'create_goods.html' %}
+
+</body>
+</html>

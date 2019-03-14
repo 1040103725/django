@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一对一关系</title>
+</head>
+<body>
+
+<p>
+    <a href="{% url 'app:addperson' %}">添加人</a>
+</p>
+<p>
+    <a href="{% url 'app:deleteperson' %}">删除人,卡怎么办</a>
+</p>
+<p>
+    <a href="{% url 'app:deletecard' %}">删除卡</a>
+</p>
+<p>
+    <a href="{% url 'app:getcard' %}">人获取身份证信息(主表获取从表)</a>
+</p>
+<p>
+    <a href="{% url 'app:getperson' %}">身份证获取人的信息(从表获取主表)</a>
+</p>
+
+</body>
+</html>
