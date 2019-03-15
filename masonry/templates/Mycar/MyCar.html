@@ -6,21 +6,23 @@
     <title></title>
     <link rel="stylesheet" href="{% static 'css/common.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/MyCar.css' %}"/>
-    <script src="{% static 'js/mov.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/jquery-1.12.3.js' %}"></script>
-    <script src="{% static 'js/jquery.cookie.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/MyCar.js' %}"></script>
 
+    {#    <script src="{% static 'js/jquery.cookie.js' %}"></script>#}
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+
 <div class="topbar">
     <div class="topbarleft">
         <p>
 					<span id="hello">
 						您好,欢迎光临戴欧妮珠宝网！
-					    <a href="../onload/onload.html">登陆</a> /
-					    <a href="../login/login.html">注册</a>
+                        {% if uname %}
+                            用户名：{{ uname }}
+                        {% else %}
+                            <a href="{% url 'app:onload' %}">登陆</a> /
+                            <a href="{% url 'app:login' %}">注册</a>
+                        {% endif %}
 					</span>
             <span>体验中心：<a href="#">深圳分店</a></span>
             <span class="chang">切换</span>
@@ -29,11 +31,11 @@
     <div class="topbarright">
         <a href="MyCar.html">
 					<span>
-						<img src="../img/banicon.png" class="img"/>
+						<img src="{% static 'img/banicon.png' %}" class="img">
 					            我的戴欧妮
 					</span>
         </a>
-        <a href="#">
+        <a href="{% url 'app:mycar' %}">
 					<span>
 						我的珠宝箱[<span class="zero zero1">0</span>]
 					</span>
@@ -52,19 +54,19 @@
         </a>
         <a href="#">
 					<span>
-						<img src="../img/banicon2.png"/>
+						<img src="{% static 'img/banicon2.png' %}">
 					            手机版
 					</span>
         </a>
         <a href="#">
 					<span>
-						<img src="../img/banicon3.png"/>
+						<img src="{% static 'img/banicon3.png' %}">
 					             微信
 					</span>
         </a>
         <a href="#">
 					<span>
-						<img src="../img/banicon4.png"/>
+						<img src="{% static 'img/banicon4.png' %}">
 					             微博
 					</span>
         </a>
@@ -73,7 +75,7 @@
 
 <div id="bg"></div>
 <div class="change">
-    <p>切换体验中心<span>&times;</span></p>
+    <p>切换体验中心<span>×</span></p>
     <div class="changeonee">
         <!--<div class="changeone">
             <p>华北：</p>
@@ -99,12 +101,12 @@
 </div>
 <div class="header">
     <div class="headerleft">
-        <img src="../img/dionly.png"/>
+        <img src="{% static 'img/dionly.png' %}">
     </div>
     <div class="headermain">
         <p class="p1">
-            <input type="text" placeholder="请输入型号或名称"/>
-            <input type="button" value="搜索"/>
+            <input placeholder="请输入型号或名称" type="text">
+            <input value="搜索" type="button">
         </p>
         <p class="p2">
 					<span>
@@ -125,7 +127,7 @@
         </p>
     </div>
     <div class="headerright">
-        <img src="../img/二维码.png"/>
+        <img src="{% static 'img/二维码.png' %}">
     </div>
 </div>
 <div class="menuer">
@@ -134,7 +136,7 @@
 					所有分类
 				</span>
         <span class="unhover">
-					
+
 				</span>
     </div>
     <div class="menuermain">
@@ -180,7 +182,7 @@
         </a>
     </div>
     <div class="menuerright">
-        <img src="../img/tephone.png"/>
+        <img src="{% static 'img/tephone.png' %}">
     </div>
 </div>
 <div class="homeslider">
@@ -204,93 +206,56 @@
         </div>
         <div class="title">
             <p>
-                <img src="../img/carticon.jpg"/>
+                <img src="{% static 'img/carticon.jpg' %}">
                 我的珠宝箱
             </p>
         </div>
+        <div class="carshop carshoped">
+            {% for cart in carts %}
+                <ul class="carts1">
+                    <li class="carts2">
+                        <div class="clickthis" cartid="{{ cart.id }}">
+                            {% if cart.isselect %}
+                                <span class="glyphicon glyphicon-ok"></span>
+                            {% else %}
+                                <span class="no"></span>
+                            {% endif %}
+                        </div>
+                        <div class="showthis">
+                                    <span class="picture1">
+			    				    <img src="{{ cart.shoplist.src }}"/>
+			    			        </span>
+                            <span class="spanlove2"><a>{{ cart.shoplist.name }}</a></span>
+                            <span class="glyphicon glyphicon-minus-sign" shopID="{{ cart.shoplist.id }}"></span>
+                            <span class="spanlove4" nums="{{ cart.number }}">
+                                        {% if cart.shoplist_id == cart.shoplist.id %}
+                                            {{ cart.number }}
+                                        {% endif %}
+                                    </span>
+                            <span class="glyphicon glyphicon-plus-sign" shopID="{{ cart.shoplist.id }}"></span>
+                            <span class="spanlove5">￥{{ cart.shoplist.content1 }}元</span>
+                            <span class="spanlove7"
+                                  prices="{{ cart.shoplist.content2 }}">￥{{ cart.shoplist.content2 }}元</span>
+                            <span class="delete">删除</span>
+                        </div>
 
-        <div class="linetop1">
-
-        </div>
-        <div class="carshop">
-
-            <p class="cartp">您的珠宝箱暂时没有找到商品</p>
-            <p class="linetop2">
-                <span class="spanshop1">商品</span>
-                <span class="spanshop2">型号</span>
-                <span class="spanshop3">尺寸</span>
-                <span class="spanshop4">刻字内容</span>
-                <span class="spanshop5">市场价格</span>
-                <span class="spanshop6">优惠</span>
-                <span class="spanshop7">成交价</span>
-                <span class="spanshop8">操作</span>
-            </p>
-            <ul>
-                <!--<li>
-                    <span class="picture1">
-                        <img src="../img/smal811.jpg" />
-                    </span>
-                    <span class="spanlove2"><a>爱情手镯,材质：18K DBW134533D</a></span>
-                    <span class="spanlove3">18</span>
-                    <span class="spanlove4"></span>
-                    <span class="spanlove5">19841.00</span>
-                    <span class="spanlove6">9398.00</span>
-                    <span class="spanlove7">10443.00</span>
-                    <span class="spanlove8">
-                        <span class="delete">删除</span>
-                        <span class="change2">修改</span>
-                    </span>
-                </li>-->
-            </ul>
+                    </li>
+                </ul>
+            {% endfor %}
             <div class="bottom">
                 <div class="linetop3">
-                    共<span class="num1">2</span>件商品×</span><span class="clear1">清空珠宝箱</span>
+                    <span id="clear1" class="no" isall="false"></span>全选
+                    <span class="num1">共{{ carts.count }}</span>件商品
                     <span class="go">继续购物</span>
                 </div>
                 <div class="count">
-                    商品总金额<span class="total1">￥27494.00</span> - 优惠金额 <span class="discount">￥13023.00</span> = 订单总金额
-                    <span class="total">￥14471.00</span>
-                    <span class="jiedsuan">结算</span>
+                    订单总金额 <span>￥</span><span class="total"></span><span>元</span>
+                    <span class="jiedsuan" id="generateorder">结算</span>
                 </div>
             </div>
-            <!--清空珠宝箱-->
-            <div id="bga"></div>
-            <div class="changea">
-                <p class="pdeng">操作提示<span>&times;</span></p>
-                <div class="changeoneea">
-                    <p class="num">确定加入购物车吗？</p>
-                    <p class="zuankou"><span class="spanone">钻石重量：</span>
-                        <select id="weight">
-                            <option>1-10分</option>
-                            <option>10-15分</option>
-                            <option>15-20分</option>
-                            <option>25-30分</option>
-                            <option>35-40分</option>
-                            <option selected="selected">40-45分</option>
-                            <option>45-50分</option>
-                            <option>50-55分</option>
-                            <option>55-60分</option>
-                            <option>60-75分</option>
-                            <option>75-80分</option>
-                            <option>80-85分</option>
-                            <option>85-90分</option>
-                            <option>90-95分</option>
-                            <option>95-100分</option>
-                            <option>100-105分</option>
-                            <option>105-110分</option>
-                            <option>115-120分</option>
-                            <option>120-125分</option>
-                        </select>
-                    </p>
-                </div>
-                <input type="button" value="确定" class="button"/>
-                <input type="button" value="取消" class="giveup"/>
-            </div>
-
 
         </div>
     </div>
-
 
 </div>
 
@@ -406,7 +371,7 @@
     <div class="footerthree">
         <div class="onee">
             <div class="img">
-                <img src="../img/icon1_03.jpg"/>
+                <img src="{% static 'img/icon1_03.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">网上交易</p>
@@ -415,7 +380,7 @@
         </div>
         <div class="one">
             <div class="img">
-                <img src="../img/icon2_05.jpg"/>
+                <img src="{% static 'img/icon2_05.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">众信认证</p>
@@ -424,7 +389,7 @@
         </div>
         <div class="one">
             <div class="img">
-                <img src="../img/icon3_03.jpg"/>
+                <img src="{% static 'img/icon3_03.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">工商网监</p>
@@ -433,7 +398,7 @@
         </div>
         <div class="one">
             <div class="img">
-                <img src="../img/icon4_11.jpg"/>
+                <img src="{% static 'img/icon4_11.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">经营性网站</p>
@@ -442,7 +407,7 @@
         </div>
         <div class="one">
             <div class="img">
-                <img src="../img/icon5_14.jpg"/>
+                <img src="{% static 'img/icon5_14.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">诚信电商</p>
@@ -451,7 +416,7 @@
         </div>
         <div class="one">
             <div class="img">
-                <img src="../img/icon6_16.jpg"/>
+                <img src="{% static 'img/icon6_16.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">百度推广</p>
@@ -460,7 +425,7 @@
         </div>
         <div class="one">
             <div class="img">
-                <img src="../img/icon7_05.jpg"/>
+                <img src="{% static 'img/icon7_05.jpg' %}">
             </div>
             <div class="info">
                 <p class="p1">戴欧妮珠宝</p>

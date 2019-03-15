@@ -1,10 +1,9 @@
 $(function () {
     $('img').each(function () {
-        var imgPath = $(this).attr('src')
-        var imgpa = imgPath.slice(3,)
+        var imgpath = $(this).attr('src').slice(3,)
 
-        imgPath = "{% static '" + imgpa + "' %}"
-        $(this).attr('src', imgPath)
+        imgPath = "{% static '" + imgpath + "' %}"
+        $(this).attr('src',imgPath)
     })
     console.log($('body').html())
 })

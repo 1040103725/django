@@ -1,234 +1,271 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-ul,li{
-	list-style: none;
-}
-body{
-	font-size: 12px;
-	font-family: "微软雅黑";
-}
-a{ 
-	text-decoration: none;
-	color: black;
-}
-.homeslider{
-	position: relative;
-	width: 100%;
-	height: 195px;
-	background: #f3f3f3;
-	
-
-}
-.homeslider .picture{
-	margin-left: 6%;
-	width: 88.2%;
-	height: 195px;
-}
-.homeslider .picture img{
-	width: 100%;
-	height: 100%;
-	margin-top: -3px;
-}
-.pindex{
-	margin-left: 6%;
-	font-size: 14px;
-	height: 40px;
-	line-height: 40px;
-}
-.pindex span:hover{
-	color: red;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.content{
-	margin-left: 6%;
-	width: 88.2%;
-	overflow: hidden;
-	
+ul, li {
+    list-style: none;
 }
-.content .contentleft{
-	float: left;
-	width: 22%;
-	/*background: red;*/
-	/*overflow: hidden;*/
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
 }
-.content .contentleft img{
-	width: 100%;
-	height: 100%;
+
+a {
+    text-decoration: none;
+    color: black;
 }
-.content .contentright{
-	float: left;
-	width: 76%;
-	margin-left: 2%;
+
+.homeslider {
+    position: relative;
+    width: 100%;
+    height: 195px;
+    background: #f3f3f3;
+
+
 }
-.content .contentleft .contentone{
-	/*clear: both;*/
-	height: 340px;
-	width: 100%;
-	border: 1px solid #dddddd;
+
+.homeslider .picture {
+    margin-left: 6%;
+    width: 88.2%;
+    height: 195px;
 }
-.contentoneleftbottom{
-	height: 280px;
-	margin-top: 10px;
-	margin-left: 5%;
-	width: 90%;
+
+.homeslider .picture img {
+    width: 100%;
+    height: 100%;
+    margin-top: -3px;
 }
-.contentoneleftbottom .div1{
-	width: 100%;
-	
+
+.pindex {
+    margin-left: 6%;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
 }
-.contentoneleftbottom p{
-	cursor: pointer;
-	height: 30px;
-	width: 100%;
+
+.pindex span:hover {
+    color: red;
 }
-.contentoneleftbottom #div1 i{
-	display: inline-block;
-	width: 10%;
-	height: 100%;
-	background: url(../img/showbg.png) no-repeat;
-	vertical-align: text-top;
-	margin-top: 2px;
+
+.content {
+    margin-left: 6%;
+    width: 88.2%;
+    overflow: hidden;
+
 }
-.contentoneleftbottom #div1 ul{
-	display: none;
-	overflow: hidden;
-	border-top: 1px dashed gray;
-	border-bottom:1px dashed gray;
-	background:#f3f3f3;
-	margin-bottom: 5px;
+
+.content .contentleft {
+    float: left;
+    width: 22%;
+    /*background: red;*/
+    /*overflow: hidden;*/
 }
-.contentoneleftbottom #div1 ul li{
-	
-	cursor: pointer;
-	float: left;
-	padding-left: 10%;
+
+.content .contentleft img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .contentright {
+    float: left;
+    width: 76%;
+    margin-left: 2%;
+}
+
+.content .contentleft .contentone {
+    /*clear: both;*/
+    height: 340px;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+.contentoneleftbottom {
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.contentoneleftbottom .div1 {
+    width: 100%;
+
+}
+
+.contentoneleftbottom p {
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+}
+
+.contentoneleftbottom #div1 i {
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    background: url(../img/showbg.png) no-repeat;
+    vertical-align: text-top;
+    margin-top: 2px;
+}
+
+.contentoneleftbottom #div1 ul {
+    display: none;
+    overflow: hidden;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    background: #f3f3f3;
+    margin-bottom: 5px;
+}
+
+.contentoneleftbottom #div1 ul li {
+
+    cursor: pointer;
+    float: left;
+    padding-left: 10%;
     width: 40%;
     line-height: 45px;
-	height: 45px;
-	text-align: left;
-}
-.content .contentleft .contenttwo{
-	margin-top: 20px;
-	height: 608px;
-	width: 100%;
-	border: 1px solid #dddddd;
+    height: 45px;
+    text-align: left;
 }
 
-.contentleft .contentone .contentonetop,.contentleft .contenttwo .contentonetop{
-	padding-left: 4%;
-	width: 96%;
-	height: 35px;
-	line-height: 35px;
-	font-weight: bold;
-	background: url(../img/headbg.jpg);
-}
-.contenttwo .img{
-	width: 84%;
-	height: 202px;
-	margin-left: 8%;
-	margin-top: 18px;
-	border: 1px solid #dddddd;
-}
-.contenttwo .p1,.contenttwo .p2{
-	height: 35px;
-	width: 100%;
-	text-align: center;
-	line-height: 35px;
-}
-.contenttwo .p2{
-	height: 25px;
-	line-height: 25px;
-}
-.contenttwo .p2 span{
-	color: red;
-	font-size: 14px;
+.content .contentleft .contenttwo {
+    margin-top: 20px;
+    height: 608px;
+    width: 100%;
+    border: 1px solid #dddddd;
 }
 
-.content .contentleft .contentthree{
-	margin-top: 20px;
-	height: 143px;
-	width: 100%;
-}
-.content .contentleft .contentfour{
-	margin-top: 20px;
-	height: 110px;
-	width: 100%;
-}
-.content .contentleft .contentfive{
-	margin-top: 20px;
-	height: 308px;
-	width: 100%;
-}
-.content .contentright .rightone{
-	width: 99.8%;
-	height: 183px;
-	background: #f8f8f8;
-	border: 1px solid #cecece;
-}
-.contentright .rightone ul{
-	width: 100%;
-	height: 183px;
-}
-.contentright .rightone ul li{
-	margin-left: 1%;
-	width: 98%;
-	height: 42px;
-	border-bottom: 1px dashed #cecece;
-}
-.contentright .rightone ul li:last-child{
-	border-bottom: none;
-}
-.contentright .rightone ul li span{
-	/*float: left;*/
-	display: inline-block;
-	
-	height: 42px;
-	line-height: 42px;
-}
-.contentright .rightone ul li .span1{
-	color: #db3962;
-	float: left;
-	width: 5%;
-	margin-right: 1%;
-}
-.contentright .rightone ul li p{
-	display: inline-block;
-	float: left;
-	width: 94%;
-	height: 42px;
-	line-height: 42px;
-}
-.contentright .rightone ul li p span{
-	margin-left: 1%;
-	margin-right: 3%;
-}
-.contentright .rightone ul li p .span2{
-	margin-left: 27%;
+.contentleft .contentone .contentonetop, .contentleft .contenttwo .contentonetop {
+    padding-left: 4%;
+    width: 96%;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    background: url(../img/headbg.jpg);
 }
 
-.content .contentright .righttwo{
-	width: 100%;
-	height: 50px;
+.contenttwo .img {
+    width: 84%;
+    height: 202px;
+    margin-left: 8%;
+    margin-top: 18px;
+    border: 1px solid #dddddd;
 }
-.contentright .righttwo .pageone{
-	float: left;
-	margin-left: 70%;
-	width: 20%;
-	margin-top: 18px;
-	height: 30px;
-	line-height: 30px;
+
+.contenttwo .p1, .contenttwo .p2 {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
 }
-.contentright .righttwo .pagetwo{
-	margin-top: 18px;
-	float: left;
-	width: 8%;
-	height: 30px;
+
+.contenttwo .p2 {
+    height: 25px;
+    line-height: 25px;
 }
- .righttwo .pagetwo button{
- 	margin-top: 3px;
-	float: left;
+
+.contenttwo .p2 span {
+    color: red;
+    font-size: 14px;
+}
+
+.content .contentleft .contentthree {
+    margin-top: 20px;
+    height: 143px;
+    width: 100%;
+}
+
+.content .contentleft .contentfour {
+    margin-top: 20px;
+    height: 110px;
+    width: 100%;
+}
+
+.content .contentleft .contentfive {
+    margin-top: 20px;
+    height: 308px;
+    width: 100%;
+}
+
+.content .contentright .rightone {
+    width: 99.8%;
+    height: 183px;
+    background: #f8f8f8;
+    border: 1px solid #cecece;
+}
+
+.contentright .rightone ul {
+    width: 100%;
+    height: 183px;
+}
+
+.contentright .rightone ul li {
+    margin-left: 1%;
+    width: 98%;
+    height: 42px;
+    border-bottom: 1px dashed #cecece;
+}
+
+.contentright .rightone ul li:last-child {
+    border-bottom: none;
+}
+
+.contentright .rightone ul li span {
+    /*float: left;*/
+    display: inline-block;
+
+    height: 42px;
+    line-height: 42px;
+}
+
+.contentright .rightone ul li .span1 {
+    color: #db3962;
+    float: left;
+    width: 5%;
+    margin-right: 1%;
+}
+
+.contentright .rightone ul li p {
+    display: inline-block;
+    float: left;
+    width: 94%;
+    height: 42px;
+    line-height: 42px;
+}
+
+.contentright .rightone ul li p span {
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.contentright .rightone ul li p .span2 {
+    margin-left: 27%;
+}
+
+.content .contentright .righttwo {
+    width: 100%;
+    height: 50px;
+}
+
+.contentright .righttwo .pageone {
+    float: left;
+    margin-left: 70%;
+    width: 20%;
+    margin-top: 18px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.contentright .righttwo .pagetwo {
+    margin-top: 18px;
+    float: left;
+    width: 8%;
+    height: 30px;
+}
+
+.righttwo .pagetwo button {
+    margin-top: 3px;
+    float: left;
     margin-left: 3%;
     display: inline-block;
     width: 60%;
@@ -239,104 +276,115 @@ a{
     outline: none;
 }
 
-.content .contentright .rightthree{
-	margin-top: 20px;
-	padding-left: 2%;
-	width: 97.8%;
-	height: 33px;
-	/*line-height: 33px;*/
-	border: 1px solid #dddddd;
-	background: url(../img/headbg.jpg);
-}
-.contentright .rightthree .div1{
-	float: left;
-	width: 5%;
-	cursor: pointer;
+.content .contentright .rightthree {
+    margin-top: 20px;
+    padding-left: 2%;
+    width: 97.8%;
+    height: 33px;
+    /*line-height: 33px;*/
+    border: 1px solid #dddddd;
+    background: url(../img/headbg.jpg);
 }
 
-.contentright .rightthree span{
-	float: left;
-	display: inline-block;
-	height: 33px;
-	line-height: 33px;
+.contentright .rightthree .div1 {
+    float: left;
+    width: 5%;
+    cursor: pointer;
 }
-.contentright .rightthree i{
-	margin-top: 14px;
-	float: left;
-	display: inline-block;
-	border-top: 5px solid black;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
+
+.contentright .rightthree span {
+    float: left;
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
 }
-.contentright .rightthree img{
-	float: left;
-	margin-left: 2%;
-	margin-right: 2%;
-	display: inline-block;
-	height: 100%;
+
+.contentright .rightthree i {
+    margin-top: 14px;
+    float: left;
+    display: inline-block;
+    border-top: 5px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.contentright .rightthree img {
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    height: 100%;
 }
 
 
-
-.content .contentright .rightfour{
-	margin-top: 20px;
-	width: 99.8%;
-	height: 2037px;
-	/*border: 1px solid #dddddd;*/
-	border-bottom:1px solid #dddddd ;
-	border-right:1px solid #dddddd ;
-}
-.div33{
-	clear: both;
-	width: 70%;
-	margin-left: 15%;
-	height: 190px;
-	margin-top: 10px;
-}
-.div33 img{
-	width: 100%;
-	height: 100%;
+.content .contentright .rightfour {
+    margin-top: 20px;
+    width: 99.8%;
+    height: 2037px;
+    /*border: 1px solid #dddddd;*/
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
 }
 
-.contentright .rightfour .rightfourimg{
-	float: left;
-	width: 33.2%;
-	height:290px ;
-	border-top: 1px solid #dddddd;
-	border-left: 1px solid #dddddd;
+.div33 {
+    clear: both;
+    width: 70%;
+    margin-left: 15%;
+    height: 190px;
+    margin-top: 10px;
 }
-.contentright .rightfour .rightfourimg p{
-	margin-top: 10px;
-	width: 100%;
-	height: 30px;
-	line-height: 30px;
-	margin-bottom: 10px;
-	/*background: red;*/
-	text-align: center;
+
+.div33 img {
+    width: 100%;
+    height: 100%;
 }
-.p22{
-	background: #f8f8f8;
-	width: 100%;
-	height: 40px;
-	margin-top: 10px;
+
+.contentright .rightfour .rightfourimg {
+    float: left;
+    width: 33.2%;
+    height: 290px;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
 }
-.div11,.div22{
-	float: left;
-	width: 47%;
-	height: 40px;
-	line-height: 40px;
+
+.contentright .rightfour .rightfourimg p {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    /*background: red;*/
+    text-align: center;
 }
-.div12{
-	margin-left: 5%;
+
+.p22 {
+    background: #f8f8f8;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
 }
-.div11 span{
-	text-decoration: line-through;
+
+.div11, .div22 {
+    float: left;
+    width: 47%;
+    height: 40px;
+    line-height: 40px;
 }
-.div22{
-	/*padding-left: 5%;*/
-	width: 48%;
+
+.div12 {
+    margin-left: 5%;
 }
-.div22 span{
-	color: red;
-	font-size: 14px;
+
+.div11 span {
+    text-decoration: line-through;
+}
+
+.div22 {
+    /*padding-left: 5%;*/
+    width: 48%;
+}
+
+.div22 span {
+    color: red;
+    font-size: 14px;
 }

@@ -47,10 +47,11 @@ input,select{
 .carshop{
 	background: white;
 	padding-bottom: 10px;
+	overflow: scroll;
 }
 .carshoped{
-	padding-top: 115px;
-	background: url(../img/cartnone.jpg) no-repeat;
+	/*padding-top: 115px;*/
+	/*background: url(../img/cartnone.jpg) no-repeat;*/
 	background-size: cover;
 	height: 331px;
 	padding-bottom: 0;
@@ -64,7 +65,7 @@ input,select{
 	line-height: 40px;
 	border: 1px solid #ccc;
 	background: #fef1ef;
-	
+
 }
 .homeslider .carshop .linetop2{
 	width: 98%;
@@ -96,47 +97,46 @@ ul span{
 	width: 25%;
 }
 
-.spanshop3,.spanlove3{
-	width: 9%;
-}
+/*.spanshop3,.spanlove3{*/
+	/*width: 9%;*/
+/*}*/
 .spanshop4,.spanlove4{
 	width: 14%;
 }
 .spanshop5,.spanlove5{
 	width: 9%;
 }
-.spanshop6,.spanlove6{
-	width: 9%;
-}
+/*.spanshop6,.spanlove6{*/
+	/*width: 9%;*/
+/*}*/
 .spanshop7,.spanlove7{
 	width: 9%;
 }
-.spanshop8,.spanlove8{
-	width: 9%;
-}
+
 .spanlove2{
 	width: 25.5%;
 	cursor: pointer;
 }
-.spanlove3{
-	width: 9.2%;
-}
+/*.spanlove3{*/
+	/*width: 9.2%;*/
+/*}*/
 .spanlove4{
 	width: 14.4%;
+	font-size: 30px;
 }
 .spanlove5{
 	width: 9.1%;
 	text-decoration: line-through;
+	color: #c11e1f;
 }
-.spanlove6{
-	width: 9.1%;
-}
+/*.spanlove6{*/
+	/*width: 9.1%;*/
+/*}*/
 .spanlove7{
 	width: 9.3%;
+	color: green;
 }
-.spanlove8{
-	width: 9.1%;
-}
+
 .carshop ul{
 	padding-top: 2px;
     padding-left: 0.5%;
@@ -161,8 +161,8 @@ ul span{
 	width: 100%;
 	height: 100%;
 }
-.delete,.change2{
-	width: 100%;
+.delete{
+	/*width: 100%;*/
 	height: 14px;
 	line-height: 14px;
 	 cursor: pointer;
@@ -171,7 +171,7 @@ ul span{
 	margin-top: 60px;
 }
 .homeslider .carshop .linetop3,.homeslider .carshop .count{
-	height: 40px;
+	height: 60px;
 	line-height: 40px;
 	float: left;
 	width: 50%;
@@ -197,7 +197,7 @@ ul span{
 	color: #db3962;
 	cursor: pointer;
 }
-.carshop .clear1{
+.carshop #clear1{
 	cursor: pointer;
 }
 .bottom .count .total{
@@ -216,16 +216,16 @@ ul span{
 	display: inline-block;
 	cursor: pointer;
 }
-#bga{ 
-    display: none;  
-    position: absolute;  
-	top: 0%;  left: 0%;  
-	width: 100%; 
-    height: 100%; 
-	background-color: black; 
-	z-index:198;  
-	-moz-opacity: 0.6; 
-	opacity:.60;  
+#bga{
+    display: none;
+    position: absolute;
+	top: 0%;  left: 0%;
+	width: 100%;
+    height: 100%;
+	background-color: black;
+	z-index:198;
+	-moz-opacity: 0.6;
+	opacity:.60;
 	filter: alpha(opacity=60);
 }
 .changea{
@@ -291,4 +291,44 @@ ul span{
 }
 .changea .giveup{
 	 left: 60%;
+}
+
+.cart .glyphicon-ok{
+    background: green;
+    color: white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+	margin: 1.5rem;
+}
+.cart .no{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid grey;
+	margin: 1.5rem;
+}
+.total1{
+	color: #c11e1f;
+}
+.clickthis{
+	z-index: 99;
+}
+.glyphicon-plus-sign{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+	margin: 6rem;
+	z-index: 99;
+}
+.glyphicon-minus-sign{
+	border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+	margin: 6rem;
+	z-index: 99;
 }
