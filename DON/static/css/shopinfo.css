@@ -1,0 +1,436 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{
+	list-style: none;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+body img {
+    border: none;
+}
+a{ 
+	text-decoration: none;
+	color: black;
+}
+.content{
+	width: 100%;
+	background: #f1f1f1;
+	/*overflow: hidden;*/
+	/*height: 300px;*/
+}
+.content .contentone{
+	
+	background:white;
+	border: 1px solid #dddddd;
+}
+.content .contentone .linetop{
+	width: 100%;
+	height: 17px;
+	border-top: 2px solid pink;
+}
+.content .contentone .contentoneleft{
+	position: relative;
+	width: 40%;
+	height: 550px;
+	float: left;
+	border-right: 1px solid #dddddd;
+	/*border-bottom: 1px solid #dddddd;*/
+}
+.contentone .contentoneleft .contentonelefttop{
+	position: absolute;
+	left: 10%;
+	top: 0;
+	width: 80%;
+	height: 420px;
+	/*margin-left: 10%;*/
+}
+.contentone img{
+	width: 100%;
+	height: 100%;
+}
+.contentone .contentoneleftbottom{
+	position: absolute;
+	left: 12%;
+	margin-top: 447px;
+	width: 80%;
+	height: 100px;
+}
+.contentone .icon1,.contentone .icon2{
+	background: green;
+	margin-top: 10px;
+	float: left;
+	width: 2%;
+	height: 40px;
+	background: url(/static/img/ui-jcarousel-prev.jpg);
+	background-position: -5px -13px;
+}
+.contentone .icon2{
+	background: url(/static/img/ui-jcarousel-next.jpg);
+	background-position: -6px -16px;
+    margin-left: 2%;
+}
+.contentone .box1{
+	float: left;
+	width: 21%;
+	height: 80px;
+	margin-left: 1.5%;
+	border: 1px solid #dddddd;
+} 
+.pindex{
+	margin-left: 6%;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 9px;
+}
+.pindex span:hover{
+	color: red;
+}
+.content .contentone .contentoneright{
+	float: left;
+	width: 40%;
+	/*height: 300px;*/
+	margin-top: 10px;
+	margin-left: 10%;
+	/*border: 1px solid #dddddd;*/
+	
+}
+.content .contentone .contentoneright .info{
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px dashed #dddddd;
+} 
+/*.contentone .contentoneright .info .add{
+	width: 100%;
+	background: red;
+}*/
+.contentone .contentoneright .info p{
+	width: 100%;
+	height: 30px;
+}
+.contentone .contentoneright .info p a{
+	color: red;
+}
+.contentoneright .info p span{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 1%;
+}
+.contentoneright .info p .kspan1{
+	height: 25px;
+    line-height: 25px;
+	text-align: center;
+	width: 10%;
+}
+.contentoneright .info p  .spancolor{
+	background: #cccccc;
+	color: black;
+}
+.contentoneright .info p  .spancolored{
+	background: #db3962;
+	color: white;
+}
+.contentoneright .info p .kspan2{
+	height: 25px;
+    line-height: 25px;
+	text-align: center;
+	width: 15%;
+}
+.contentoneright .info select{
+	border: 1px solid #dddddd;
+	outline:none;
+	width: 20%;
+	margin-left: 1%;
+	height: 20px;
+}
+.contentoneright .info input[type=text]{
+	border: 1px solid #dddddd;
+	outline:none;
+	width: 20%;
+	margin-left: 1%;
+	height: 20px;
+}
+.spanone{
+	height: 30px;
+	text-align: right;
+	width: 14%;
+	margin: 0 0;
+}
+.content .contentone .contentoneright .imgcar{
+	width: 100%;
+	padding-top: 30px;
+}
+.contentoneright .imgcar .img1,.contentoneright .imgcar .img2{
+	float: left;
+	display: inline-block;
+	width: 51%;
+	height: 42px;
+}
+.contentoneright .imgcar .img2{
+	margin-left: 5%;
+	width: 28%;
+}
+#bga{ 
+    display: none;  
+    position: absolute;  
+	top: 0%;  left: 0%;  
+	width: 100%; 
+    height: 100%; 
+	background-color: black; 
+	z-index:198;  
+	-moz-opacity: 0.6; 
+	opacity:.60;  
+	filter: alpha(opacity=60);
+}
+.changea{
+	position: fixed;
+	width: 30%;
+	left: 35%;
+	top: 210px;
+	z-index: 199;
+	display: none;
+	cursor: pointer;
+}
+.changea .pdeng{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 3%;
+	font-size: 14px;
+	font-weight: bold;
+	background: #ffd8d9;
+	border-bottom: 3px solid #b61524;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.changea .pdeng span{
+	float: right;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 5%;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #b61524;
+}
+.changeoneea{
+	padding-top: 50px;
+	width: 100%;
+	height: 130px;
+	background: #f7f7f7;
+}
+.changea .num{
+	padding-left: 23%;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px;
+	width: 100%;
+}
+.changea input[type=button]{
+	border-radius: 5px;
+	position: absolute;
+    top: 140px;
+    left: 40%;
+	width: 20%;
+	height: 30px;
+	color: white;
+	background:#b61524 ;
+}
+
+
+.content .contenttwo,.content .contentone{
+	padding-bottom: 50px;
+	margin-top: 20px;
+	margin-left: 6%;
+	width: 88.2%;
+	overflow: hidden;
+	
+}
+/*.content .contentone{
+	margin-top:0;
+}*/
+.content .contenttwoleft{
+	/*overflow: hidden;*/
+	float: left;
+	width: 22%;
+	/*background: red;
+	height: 300px;*/
+	
+}
+.content .contenttwoleft1{
+	width: 99.8%;
+	height: 266px;
+	border: 1px solid #dddddd;
+}
+.content .contenttwoleft2{
+	margin-top: 20px;
+	width: 99.8%;
+	height: 1267px;
+	border: 1px solid #dddddd;
+	border-bottom: none;
+}
+.content .contenttwoleft3{
+	margin-top: 20px;
+	width: 99.8%;
+	/*height: 1264px;
+	border: 1px solid #dddddd;*/
+}
+.content .contenttwoleft1 .contenttwoleft1top,.content .contenttwoleft2 .contenttwoleft2top,
+.content .contenttwoleft3 .contenttwoleft3top{
+	color: red;
+	padding-left: 4%;
+	height: 33px;
+	line-height: 33px;
+	background: url(/static/img/headbg.jpg);
+	width: 96%;
+} 
+.content .contenttwoleft2 .contenttwoleft2top,.content .contenttwoleft3 .contenttwoleft3top{
+	color: black;
+	
+}
+.content .contenttwoleft1 .contenttwoleft1bottom{
+	
+	height: 233px;
+	width: 100%;
+}
+.content .contenttwoleft1 .contenttwoleft1bottom img{
+	width: 100%;
+	height: 100%;
+}
+.content .contenttwoleft2 .contenttwoleft2bottom,
+.content .contenttwoleft3 .contenttwoleft3bottom{
+	padding-top: 2%;
+	border-bottom:1px solid #dddddd;
+	background: white;
+	height: 241px;
+	width: 100%;
+}
+.content .contenttwoleft2 .contenttwoleft2bottom img,
+.content .contenttwoleft3 .contenttwoleft3bottom img{
+	margin-left: 10%;
+	width: 80%;
+	height:88%;
+}
+.content .contenttwoleft2 .contenttwoleft2bottom p,
+.content .contenttwoleft3 .contenttwoleft3bottom p{
+	height: 10%;
+	line-height: 10%;
+	text-align: center;
+	cursor: pointer;
+}
+.content .contenttwoleft2 .contenttwoleft2bottom p:hover{
+	color: red;
+}
+.content .contenttwoleft3 .contenttwoleft3bottom p:hover{
+	color: red;
+}
+.content .contenttwoleft3{
+	width: 99.8%;
+	/*height: 1266px;*/
+	border: 1px solid #dddddd;
+}
+
+.content .contenttworight{
+	background: white;
+	float: left;
+	width: 75.8%;
+	margin-left: 2%;
+	border: 1px solid #dddddd;
+}
+.content .contenttworight .contenttworighttop{
+	width: 100%;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/headbg.jpg);
+}
+.content .contenttworight .contenttworighttop span{
+	float: left;
+	display: inline-block;
+	width: 10%;
+	text-align: center;
+	border-right: 1px solid #dddddd;
+	font-weight: bold;
+}
+.content .contenttworight .contenttworighttop a:hover{
+	color: black;
+}
+.content .contenttworight .contenttworightimg{
+	margin-left: 10%;
+	padding-top: 5%;
+	width: 100%;
+	height: 910px;
+}
+.content .contenttworight .contenttworightimg img{
+	width: 80%;
+	height: 90%;
+}
+.productfuwu {
+    float: left;
+	width: 84%;
+	text-align: left;
+	margin-top: -70px;
+    padding: 20px 8%;
+	line-height: 24px;
+	height: auto;
+}
+.productfuwu strong {
+    float: left;
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+    padding: 20px 0 12px 0;
+    background: url(/static/img/logobg.gif) no-repeat 0 20px;
+    text-indent: 28px;
+    font-size: 14px;
+}
+.productfuwu p {
+    float: left;
+    text-indent: 24px;
+    clear: both;
+    width: 100%;
+}
+.productfuwu center img {
+    padding: 12px 0;
+}
+.productfuwu table {
+    padding: 20px 0 0 0;
+}
+.productpack {
+    float: left;
+    width: 100%;
+    height: 290px;
+    background: url(/static/img/cpt8.jpg) no-repeat;
+    margin: 20px 0 0 0;
+}
+ .productpack p {
+    float: right;
+    width: 38%;
+    text-indent: 24px;
+    padding: 25px 20px 0 0;
+}
+.productsend {
+    float: left;
+    width: 100%;
+    height: 280px;
+    background: url(/static/img/cpt9.jpg) no-repeat;
+    margin-top: 10px;
+}
+.productsend p {
+    float: left;
+    width: 38%;
+    margin: 40px 0 0 47px;
+    text-indent: 24px;
+}
+
+body .badge{
+	width: 2rem;
+	height: 2rem;
+	background: red;
+	margin-left: 1rem;
+}

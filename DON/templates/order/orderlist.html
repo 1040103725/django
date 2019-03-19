@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单列表</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/orderlist.css' %}">
+    <script type="text/javascript " href="{% static 'js/bootstrap.js' %}"></script>
+</head>
+<body>
+    <table class="table table-hover">
+        <tr class="ordertop">
+            <td style="color: white;background: #6d6c6c">订单号</td>
+        </tr>
+        {% for order in orders %}
+            <tr>
+            <td>
+
+                    <a href="{% url 'app:orderdetail' order.idenrifier %}">
+                    {{ forloop.counter }}丶{{ order.idenrifier }}
+                        <span style="color: white;background: red">
+                            {% if order.status == 0 %}
+                                未付款
+                            {% elif order.status == 1 %}
+                                已付款(未发货)
+                            {% elif order.status == 2 %}
+                                已签收
+                            {% endif %}
+                        </span>
+                    </a>
+
+            </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

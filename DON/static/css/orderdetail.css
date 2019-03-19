@@ -1,0 +1,35 @@
+.table-hover .ordertop{
+    background: #6d6c6c;
+    font-size: 20px;
+}
+.table-hover .orderall{
+    background: lightgrey;
+    height: 80px;
+
+}
+.orderimg img{
+    width: 80px;
+    height: 80px;
+}
+.orderall .ordername{
+    line-height: 80px;
+}
+.orderall .ordernumber{
+    line-height: 80px;
+    font-size: 25px;
+}
+.orderall .orderprice{
+    line-height: 80px;
+}
+.orderall .orderpay{
+    line-height: 80px;
+}
+.orderfoot{
+    background: lightgrey;
+}
+.orderpay{
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    background: sandybrown;
+}
